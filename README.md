@@ -17,6 +17,7 @@ As a passionate software engineer, I believe that a well-designed portfolio is c
 ## Technologies Used
 
 - **Vite**: The web portfolio is built using the Vite framework, providing fast and efficient development and build processes.
+- **React**: A JavaScript library for building user interfaces, used to create dynamic and interactive components within the web portfolio.
 - **HTML**: The foundation of my web portfolio, providing the structure and content of each page.
 - **CSS**: Used for styling and customizing the appearance of the website, ensuring a visually appealing and cohesive design.
 - **JavaScript**: Enables interactivity and dynamic features on the website, enhancing the user experience.
