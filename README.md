@@ -1,10 +1,10 @@
 # Waqar-Ahmed-Web-Portfolio
 
-Welcome to my GitHub repository for my web portfolio! This repository contains the code and assets for my personal website, where I showcase my skills, projects, and achievements as a web developer.
+Welcome to my GitHub repository for my web portfolio! This repository contains the code and assets for my personal website, showcasing my skills, projects, and achievements as a software engineer.
 
 ## Overview
 
-As a passionate web developer, I believe that a well-designed portfolio is crucial to showcasing my abilities and attracting potential clients or employers. This repository serves as the central hub for my web portfolio, allowing me to easily manage and update my website as I continue to grow and evolve in my career.
+As a passionate software engineer, I believe that a well-designed portfolio is crucial to showcasing my abilities and attracting potential clients or employers. This repository serves as the central hub for my web portfolio, made with Vite, allowing me to easily manage and update my website as I continue to grow and evolve in my career.
 
 ## Key Features
 
@@ -16,6 +16,7 @@ As a passionate web developer, I believe that a well-designed portfolio is cruci
 
 ## Technologies Used
 
+- **Vite**: The web portfolio is built using the Vite framework, providing fast and efficient development and build processes.
 - **HTML**: The foundation of my web portfolio, providing the structure and content of each page.
 - **CSS**: Used for styling and customizing the appearance of the website, ensuring a visually appealing and cohesive design.
 - **JavaScript**: Enables interactivity and dynamic features on the website, enhancing the user experience.
@@ -27,6 +28,4 @@ As a passionate web developer, I believe that a well-designed portfolio is cruci
 
 Feel free to explore the code in this repository to gain insights into my web development techniques and design choices. You can also clone the repository to experiment with the code or make suggestions for improvements. If you find any issues or have questions, please don't hesitate to open an issue or reach out to me directly.
 
-Thank you for visiting my web portfolio repository. I hope you enjoy exploring my work and learning more about me as a web developer!
-
- 
+Thank you for visiting my web portfolio repository. I hope you enjoy exploring my work and learning more about me as a software engineer!
