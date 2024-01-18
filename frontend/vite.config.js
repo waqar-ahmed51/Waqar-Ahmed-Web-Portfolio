@@ -5,4 +5,11 @@ import react from "@vitejs/plugin-react-swc";
 export default defineConfig({
   plugins: [react()],
   base: "/web-portfolio/",
+  css: {
+    preprocessorOptions: {
+      scss: {
+        additionalData: `@import "./src/styles/global.scss";`,
+      },
+    },
+  },
 });
