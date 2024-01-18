@@ -1,0 +1,40 @@
+my-vite-project/
+|-- backend/
+|   |-- src/
+|   |   |-- controllers/
+|   |   |-- models/
+|   |   |-- routes/
+|   |   |-- services/
+|   |   |-- app.js
+|   |   |-- config.js
+|   |   |-- server.js
+|   |-- package.json
+|   |-- ...
+|
+|-- frontend/
+|   |-- src/
+|   |   |-- assets/
+|   |   |-- components/
+|   |   |-- layouts/
+|   |   |-- pages/
+|   |   |-- utils/
+|   |   |-- main.js
+|   |-- public/
+|   |-- package.json
+|   |-- vite.config.js
+|   |-- ...
+|
+|-- shared/
+|   |-- common/
+|   |   |-- constants/
+|   |   |-- helpers/
+|   |-- models/
+|   |   |-- frontend/
+|   |   |-- backend/
+|   |-- ...
+|
+|-- .gitignore
+|-- README.md
+|-- package.json
+|-- ...
+
