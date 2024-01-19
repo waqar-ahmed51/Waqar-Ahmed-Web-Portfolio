@@ -14,7 +14,7 @@ my-vite-project/
 |-- frontend/              // Frontend code
 
 |   |-- src/
-|   |   |-- styles/        // contain .css and .scss files
+|   |   |-- styles/        // contain .css , global.scss and .scss files
 |   |   |-- assets/        // Static assets
 |   |   |-- components/    // Reusable UI components
 |   |   |-- layouts/       // Page layouts
