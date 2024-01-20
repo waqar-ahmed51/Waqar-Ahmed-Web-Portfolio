@@ -1,13 +1,20 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
-import Navbar from "./components/Navbar";
+import NavbarTop from "./components/NavbarTop";
+import CarouselWhoIam from "./components/CarouselWhoIam";
+import React from "react";
+import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.js';
 import "./styles/app.scss";
 
 function App() {
   return (
-    <>
-      <Navbar />
-      <div className="testClass">dfasdf</div>
+    <React.Fragment>
+      <div className="mainContainer">
+      <NavbarTop />
+      <CarouselWhoIam/>
+      </div>
+      {/* <div className="testClass">dfasdf</div>
       <div>
         <a href="https://github.com/waqar-ahmed51" target="_blank">
           <img
@@ -135,8 +142,8 @@ function App() {
       <b>
         Thank you for visiting my web portfolio repository. I hope you enjoy
         exploring my work and learning more about me as a software engineer!
-      </b>
-    </>
+      </b> */}
+    </React.Fragment>
   );
 }
 

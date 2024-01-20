@@ -1,6 +1,189 @@
-.testClass{
-    background-color: #006e6e;
-    color: #000000;
-    padding: 10px;
-    margin: 10px;
+#root {
+  //  width: 100vw;
+}
+
+// Global Styling Variable / color schem and more
+
+// Color Theme Variables 
+$primary-color:  #01FFF0;
+$secondary-color: #FAFF01;
+$font-family: 'Arial', sans-serif;
+
+.mainContainer{
+  height: 100vh;
+  width: 100vw;
+  background-color: #000f13aa;
+}
+
+// Navbar Styling
+.navbar-top-container{
+  height: 6vh;
+  width: 100vw;
+  background-color: white;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  z-index: 999;
+}
+
+.logo-wa{
+  font-size: 50px;
+}
+
+// Corousel Who I am Styling
+.conainer-corousel-who-iam{
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+}
+
+.corousel-image-background-dots-container{
+  position: absolute;
+  // background-color: rgba(255, 0, 0, 0.5);
+  z-index: 1;
+  opacity: 0.5;
+}
+
+.corousel-image-background-dots{
+  width: 100vw;
+  // filter: brightness(0) saturate(100%) invert(95%) sepia(97%) hue-rotate(338deg) brightness(110%) contrast(90%);
+  filter: drop-shadow(0.35rem 0.35rem 0.2rem $primary-color);
+  // filter: drop-shadow(0.35rem 0.35rem 0.2rem $secondary-color);
+}
+
+.corousel-name-container{
+  position: absolute;
+  z-index: 2;
+}
+
+.corousel-name{
+  font-size: 20vh;
+  color: white;
+  padding-top: 18vh;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+}
+
+.first-name{
+  color: $primary-color;
+}
+
+.last-name{
+  color: white
+}
+
+.corousel-image-profile-continer{
+  position: absolute;
+  // background-color: rgba(255, 0, 0, 0.5);
+  z-index: 3;
+}
+
+.corousel-image-profile{
+  height: 100vh;
+  padding-top: 8vh;
+  filter: drop-shadow(0.35rem 0.35rem 0.1rem $secondary-color);
+}
+
+.corousel-job-title-container{
+  position: absolute;
+  z-index: 4;
+}
+
+.corousel-title{
+  font-size: 11vh;
+  color: white;
+  padding-top: 50vh;
+  font-weight: bold;
+  font-style: italic;
+  font-family: 'Arial', sans-serif;
+}
+
+.job-title-first{
+
+}
+
+.job-tile-last{
+  
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// --------------------------------------------------------
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+.profile-pic {
+  height: 6em;
+  will-change: filter;
+  transition: filter 300ms;
+  border-radius: 20px;
+  border: #000f13aa solid;
+}
+.profile-pic:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.profile-pic.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
   }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+
