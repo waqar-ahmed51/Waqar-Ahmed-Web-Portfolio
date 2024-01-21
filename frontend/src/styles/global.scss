@@ -42,23 +42,23 @@ $secondary-font: "Times New Roman", Times, serif;
   -webkit-text-stroke: 1px black;
 }
 
-// Corousel Who I am Styling
-.conainer-corousel-who-iam{
+// intro Who I am Styling
+.conainer-intro-who-iam{
   height: 100vh;
   width: 100vw;
   background-color: black;
 }
 
-.corousel-image-background-dots-container{
+.intro-image-background-dots-container{
   position: absolute;
   // background-color: rgba(255, 0, 0, 0.5);
   z-index: 1;
   opacity: 0.5;
   // Temporary disabled the animation
-  // animation: corousel-image-background-dots-container 2s infinite;
+  animation: intro-image-background-dots-container 2s infinite;
 }
 
-@keyframes corousel-image-background-dots-container {
+@keyframes intro-image-background-dots-container {
   2%, 64% {
     transform: translate(2px, 0);
   }
@@ -73,26 +73,26 @@ $secondary-font: "Times New Roman", Times, serif;
   }
 }
 
-.corousel-image-background-dots{
+.intro-image-background-dots{
   width: 100vw;
   // filter: brightness(0) saturate(100%) invert(95%) sepia(97%) hue-rotate(338deg) brightness(110%) contrast(90%);
   filter: drop-shadow(0.35rem 0.35rem 0.2rem $primary-color);
   // filter: drop-shadow(0.35rem 0.35rem 0.2rem $secondary-color);
 }
 
-.corousel-name-container{
+.intro-name-container{
   position: absolute;
   z-index: 2;
 }
 
-.corousel-name{
+.intro-name{
   font-size: 20vh;
   color: white;
   padding-top: 18vh;
   font-weight: bold;
   font-style: italic;
   font-family: $primary-font;
-  animation: corousel-name 1s infinite;
+  animation: intro-name 1s infinite;
 }
 
 .first-name{
@@ -103,25 +103,25 @@ $secondary-font: "Times New Roman", Times, serif;
   color: white
 }
 
-.corousel-image-profile-continer{
+.intro-image-profile-continer{
   position: absolute;
   // background-color: rgba(255, 0, 0, 0.5);
   z-index: 3;
 }
 
-.corousel-image-profile{
+.intro-image-profile{
   height: 93vh;
   padding-top: 11vh;
   // padding-left: 50px;
   filter: drop-shadow(0.35rem 0.35rem 0.1rem $secondary-color);
 }
 
-.corousel-job-title-container{
+.intro-job-title-container{
   position: absolute;
   z-index: 4;
 }
 // SOFTWARE ENGINEER Job Title
-.corousel-title{
+.intro-title{
   font-size: 9vh;
   color: white;
   padding-top: 48vh;
@@ -139,7 +139,7 @@ $secondary-font: "Times New Roman", Times, serif;
   color: rgba(255, 255, 255, 0); /* Set the text color to white to see the border */
 }
 
-.corousel-footer-scroll-container{
+.intro-footer-scroll-container{
   background-color: $primary-color;
   position: absolute;
   z-index: 5;

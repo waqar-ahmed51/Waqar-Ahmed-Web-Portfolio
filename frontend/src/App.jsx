@@ -1,7 +1,7 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import NavbarTop from "./components/NavbarTop";
-import CarouselWhoIam from "./components/CarouselWhoIam";
+import IntroWhoIam from "./components/IntroWhoIam";
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
@@ -12,7 +12,7 @@ function App() {
     <React.Fragment>
       <div className="mainContainer">
       <NavbarTop />
-      <CarouselWhoIam/>
+      <IntroWhoIam/>
       </div>
       {/* <div className="testClass">dfasdf</div>
       <div>
