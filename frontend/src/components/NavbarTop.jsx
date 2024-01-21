@@ -6,7 +6,7 @@ function NavbarTop() {
     <React.Fragment>
     <div className="col-12 navbar-top-container d-flex justify-content-center align-items-center">
       <div className="col-5 d-flex align-items-center">
-        <div className="">WA</div>
+        <div className="logo-wa">WA</div>
       </div>
       <div className="col-5 d-flex justify-content-end align-items-center">
         <div className="border m-2">Colors</div>

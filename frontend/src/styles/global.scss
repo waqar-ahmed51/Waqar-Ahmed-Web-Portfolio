@@ -2,15 +2,18 @@
   //  width: 100vw;
 }
 
-// Global Styling Variable / color schem and more
+// Font Face Inter Bold Italic used in main page Who I am section
+@font-face { font-family: "Inter"; font-style: normal; font-weight: 100; font-display: swap; src: url("../assets/Inter-BoldItalic.woff2") format("woff2"); }
 
+// Global Styling Variable / color schem and more
 // Color Theme Variables 
 $primary-color:  #01FFF0;
 $secondary-color: #FAFF01;
-$font-family: 'Arial', sans-serif;
+$primary-font: 'Inter', Arial, sans-serif;
+$secondary-font: "Times New Roman", Times, serif;
 
 .mainContainer{
-  height: 100vh;
+  // height: 100vh;
   width: 100vw;
   background-color: #000f13aa;
 }
@@ -24,10 +27,19 @@ $font-family: 'Arial', sans-serif;
   position: fixed;
   top: 0;
   z-index: 999;
+  box-shadow: 1px 1px 1px $primary-color; /* Apply a drop shadow with horizontal offset, vertical offset, blur radius, and color */
 }
 
 .logo-wa{
-  font-size: 50px;
+  font-size: 45px;
+  font-weight: bold;
+  font-style: italic;
+  background: linear-gradient(90deg, $primary-color, $primary-color, $secondary-color);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  cursor: pointer;
+  -webkit-text-stroke: 1px black;
 }
 
 // Corousel Who I am Styling
@@ -42,6 +54,23 @@ $font-family: 'Arial', sans-serif;
   // background-color: rgba(255, 0, 0, 0.5);
   z-index: 1;
   opacity: 0.5;
+  // Temporary disabled the animation
+  // animation: corousel-image-background-dots-container 2s infinite;
+}
+
+@keyframes corousel-image-background-dots-container {
+  2%, 64% {
+    transform: translate(2px, 0);
+  }
+  4%, 60% {
+    transform: translate(-2px, 0);
+  }
+  62% {
+    transform: translate(0, 0);
+  }
+  70% {
+    opacity: 0; /* Make the text vanish at 70% of the animation */
+  }
 }
 
 .corousel-image-background-dots{
@@ -62,7 +91,8 @@ $font-family: 'Arial', sans-serif;
   padding-top: 18vh;
   font-weight: bold;
   font-style: italic;
-  font-family: 'Arial', sans-serif;
+  font-family: $primary-font;
+  animation: corousel-name 1s infinite;
 }
 
 .first-name{
@@ -80,8 +110,9 @@ $font-family: 'Arial', sans-serif;
 }
 
 .corousel-image-profile{
-  height: 100vh;
-  padding-top: 8vh;
+  height: 93vh;
+  padding-top: 11vh;
+  // padding-left: 50px;
   filter: drop-shadow(0.35rem 0.35rem 0.1rem $secondary-color);
 }
 
@@ -89,22 +120,63 @@ $font-family: 'Arial', sans-serif;
   position: absolute;
   z-index: 4;
 }
-
+// SOFTWARE ENGINEER Job Title
 .corousel-title{
-  font-size: 11vh;
+  font-size: 9vh;
   color: white;
-  padding-top: 50vh;
+  padding-top: 48vh;
   font-weight: bold;
   font-style: italic;
-  font-family: 'Arial', sans-serif;
+  font-family: $primary-font;
 }
 
 .job-title-first{
-
+  color: white
 }
 
 .job-tile-last{
-  
+  -webkit-text-stroke: 1px white; /* Create a 1px black border around each letter */
+  color: rgba(255, 255, 255, 0); /* Set the text color to white to see the border */
+}
+
+.corousel-footer-scroll-container{
+  background-color: $primary-color;
+  position: absolute;
+  z-index: 5;
+  width: 100vw;
+  height: 9vh;
+  margin-top: 91vh;
+}
+
+.scroll-text{
+  font-size: large;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #000; /* Change the color as needed */
+  position: absolute;
+  bottom: 38px; /* Adjust the position as needed */
+  left: 45%;
+  transform: translateX(-50%);
+  animation: bounce 2s infinite; /* Apply the bounce animation */
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
 }
 
 

@@ -10,19 +10,19 @@ function CarouselWhoIam() {
           <img
             src={backgroundDotsSvg}
             className="corousel-image-background-dots"
-            alt="Background Image"
+            alt="Background Dots Image"
           />
         </div>
         <div className="corousel-name-container">
           <p className="corousel-name">
-            <span className="first-name">WAQAR</span>&nbsp;{" "}
+            <span className="first-name">WAQAR</span>;
             <span className="last-name">AHMED</span>
           </p>
         </div>
         <div className="corousel-job-title-container">
           <p className="corousel-title">
-            <span className="job-title-first">Software </span> 
-            <span className="job-tile-last">Engineer</span>
+            <span className="job-title-first">SOFTWARE </span>
+            <span className="job-tile-last">ENGINEER</span>
           </p>
         </div>
         <div className="corousel-image-profile-continer">
@@ -31,6 +31,10 @@ function CarouselWhoIam() {
             className="corousel-image-profile"
             alt="Waqar Ahmed - Software Enginner"
           />
+        </div>
+        <div className="corousel-footer-scroll-container d-flex justify-content-center">
+          <div class="arrow-down"></div>
+          <p className="scroll-text">SCROLL DOWN</p>
         </div>
       </div>
     </React.Fragment>
