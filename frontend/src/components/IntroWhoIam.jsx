@@ -1,18 +1,20 @@
 import React from "react";
 import waqarAhmedImage from "../assets/waqar-ahmed-profile-pic.png";
 import backgroundDotsSvg from "../assets/background-dots.svg";
+import CodeAnimationBackground from "./CodeAnimationBackground";
 
 function IntroWhoIam() {
   return (
     <React.Fragment>
       <div className="conainer-intro-who-iam d-flex justify-content-center">
-        <div className="intro-image-background-dots-container">
+        {/* <div className="intro-image-background-container">
           <img
             src={backgroundDotsSvg}
             className="intro-image-background-dots"
             alt="Background Dots Image"
           />
-        </div>
+        </div> */}
+        <CodeAnimationBackground />
         <div className="intro-name-container">
           <p className="intro-name">
             <span className="first-name">WAQAR</span>;

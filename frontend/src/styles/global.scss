@@ -3,7 +3,13 @@
 }
 
 // Font Face Inter Bold Italic used in main page Who I am section
-@font-face { font-family: "Inter"; font-style: normal; font-weight: 100; font-display: swap; src: url("../assets/Inter-BoldItalic.woff2") format("woff2"); }
+@font-face { 
+  font-family: "Inter"; 
+  font-style: normal; 
+  font-weight: 100; 
+  font-display: swap; 
+  src: url("../assets/Inter-BoldItalic.woff2") 
+  format("woff2"); }
 
 // Global Styling Variable / color schem and more
 // Color Theme Variables 
@@ -37,6 +43,7 @@ $secondary-font: "Times New Roman", Times, serif;
   background: linear-gradient(90deg, $primary-color, $primary-color, $secondary-color);
   background-clip: text;
   -webkit-background-clip: text;
+  // letter-spacing: -5px;
   color: transparent;
   cursor: pointer;
   -webkit-text-stroke: 1px black;
@@ -49,16 +56,23 @@ $secondary-font: "Times New Roman", Times, serif;
   background-color: black;
 }
 
-.intro-image-background-dots-container{
+.intro-image-background-container{
   position: absolute;
   // background-color: rgba(255, 0, 0, 0.5);
   z-index: 1;
+  height: 100vh;
+  width: 100vw;
   opacity: 0.5;
+  // background-color: rgb(201, 132, 132);
   // Temporary disabled the animation
-  animation: intro-image-background-dots-container 2s infinite;
+  // animation: intro-image-background-container 2s infinite;
 }
 
-@keyframes intro-image-background-dots-container {
+.code-animation-background{
+  padding: 100px;
+}
+
+@keyframes intro-image-background-container {
   2%, 64% {
     transform: translate(2px, 0);
   }
@@ -79,6 +93,8 @@ $secondary-font: "Times New Roman", Times, serif;
   filter: drop-shadow(0.35rem 0.35rem 0.2rem $primary-color);
   // filter: drop-shadow(0.35rem 0.35rem 0.2rem $secondary-color);
 }
+
+
 
 .intro-name-container{
   position: absolute;
@@ -181,21 +197,19 @@ $secondary-font: "Times New Roman", Times, serif;
 
 
 
+// --------------------------------------------------------------------
+.typing-effect {
+  overflow: hidden; /* Ensures the text is not visible outside the div */
+  border-right: .15em solid orange; /* Creates the typing effect with a border */
+  white-space: nowrap; /* Keeps the text on a single line */
+  animation: typing 3s steps(40, end); /* Animation for the typing effect */
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+// --------------------------------------------------------------------
 
 
 
