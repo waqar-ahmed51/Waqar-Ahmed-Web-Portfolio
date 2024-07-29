@@ -14,9 +14,9 @@ class TypingEffect extends React.Component {
   render() {
     return (
       <div className="typing-effect">
-        {this.state.codeSnippet.map((line, index) => (
+        {/* {this.state.codeSnippet.map((line, index) => (
           <p key={index}>{line}</p>
-        ))}
+        ))} */}
       </div>
     );
   }
